@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+    <style>
+table, td, th{
+    border: 1px solid black;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Week 4 learning</h1>
+    </header>
+    <main>
+        <!--learning about img tag-->
+        <h2>Image tag example</h2>
+        <img src="./image/coffee-shop.jpg" alt="coffee cup with coffee beans" width="500">
+        <img src="./image/coffee-shop.jpg" title="coffee cup with coffee beans" width="500">
+        <!--if an image is decorative keep the alt tag empty alt=""-->
+
+        <!--learning about a tag-->
+        <h2>Link tag example</h2>
+        <p>Here is the link to visit <a href="https://www.google.com" target="_blank">Google Homepage</a>.</p>
+        <a href="./thanks.html">Thank you page.</a>
+        <a href="#cakes">Jump to cakes menu</a>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+  dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+  saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+  Saepe.
+</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+  dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+  saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+  Saepe.
+</p>
+<ul id="cakes">
+  <li>Red Velvet</li>
+  <li>Tiramisu</li>
+  <li>Black Forest</li>
+</ul>
+<!-- tables in html -->
+ <h2>Simple html table</h2>
+ <table>
+    <caption> Student grade information</caption>
+<thead>
+<tr>
+    <th>Student name</th>
+    <th>course name</th>
+    <th>Grade</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>john smith</td>
+        <td>course name</td>
+        <td>grade</td>
+    </tr>
+    <tr>
+        <td>mel</td>
+        <td>mel</td>
+        <td>mel</td>
+    </tr>
+</tbody>
+</table>
+<h2>Merging cell</h2>
+<table>
+    <thead>
+      <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Scores</th>
+      </tr>
+      <tr>
+        <th>Maths</th>
+        <th>English</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bob</td>
+        <td>10/10</td>
+        <td>9/10</td>
+      </tr>
+      <tr>
+        <td>Fran</td>
+        <td>8/10</td>
+        <td>10/10</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2> Fake data</h2>
+  <table>
+    <thead>
+        <tr>
+            <th colspan="2">days</th>
+            <th colspan="2">month</th>
+        </tr>
+        <tr>
+            <th>Mon</th> 
+            <th>tue</th>
+            <th>Jan</th>
+            <th>sep</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>   
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>   
+        </tr>
+    </tbody>
+  </table>
+
+  <!--form element-->
+  <h2>HTML Form Elements</h2>
+  <form action="./thanks.html" method="get">
+    <label for="fullname">Name:</label>
+    <input id="fullname" type="text" placeholder="khush" name="fullname">
+    <label for="age"> Age</label>
+    <input id="age" type="number" min="0" max="20" step="2" name="age" >
+    <label for="qu"> quantity</label>
+    <input id="age" type="text" >
+    <label for="message">Your Message</label>
+        <textarea id="message"></textarea>
+
+        
+    <button type="submit">send</button>
+
+  </form>
+
+</main>
+</body>
+
+</html>
