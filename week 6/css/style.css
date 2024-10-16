@@ -1,0 +1,81 @@
+
+html{
+    font-size: 20PX;
+}
+body{
+    background-color:rgba(106, 32, 32, 0.307);
+    color: #333;
+    line-height: 1.5;
+    font-family:"Fira Sans", sans-serif;
+}
+.container{
+/* max-width: 90%; */
+max-width: 90vw;
+margin: 0 auto;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10rem 0;
+    text-align: center;
+    background-image: url("../images/bread.jpg");
+    /* background-repeat: no-repeat; */
+   /* background-position: 20px 40px;*/
+   background-size: cover;
+   background-position: center;
+}
+h1{
+    font-size: 2rem;
+/* 1rem = 16px*/
+}
+
+nav ul{
+    list-style: none;
+    padding: 0.7rem 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 0.5rem;
+}
+nav ul li a{
+    color: #fff;
+    padding: 1 rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #333;
+
+}
+/* #breakfast {
+    max-width: 90%;
+} */
+section{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+aside{
+    background-color: #7ee8c5;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+footer{
+    text-align: center;
+    background-color: #353633;
+    color: #f4f4f4;
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
