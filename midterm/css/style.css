@@ -1,0 +1,141 @@
+html{
+    background-color: #aad4cf;
+    border-left: 250px solid #aad4cf;
+    border-right: 250px solid #aad4cf;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#d5e2e1;
+    color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+/* Header styling */
+
+header{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header-image{
+    width: 100%;
+    height: auto;
+}
+
+.site-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    float: left;
+}
+/* navigation styling */
+
+nav ul{
+    list-style:none;
+    background-color: #d5e2e1;
+    padding: 0px;
+    margin: 10px 0 0;
+ 
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 100px;
+}
+/* subheading */
+
+.subheading{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* Article section */
+
+.article-section{
+  margin: 5px 5px;
+   
+}
+
+.article-section h2{
+    margin-bottom: 0px;
+
+}
+
+.article-img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px;
+    
+}
+article p{
+    text-align: inherit;
+}
+/*facts section*/
+.facts-section{
+    margin-bottom: 30px;
+    background-color: #d5e2e1;
+
+}
+
+.facts-section ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/*contact section*/
+
+.contact-section{
+    background-color: #d5e2e1;
+    padding: 0;
+    border-radius: 10px;
+}
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 20px;
+}
+.contact-section label{
+    margin-top: 10px;
+}
+.contact-section input, .contact-section textarea{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+button{
+    margin-top: 10px;
+    padding:  5px 10px;
+    
+    color: black;
+    border: 1px solid;
+
+    cursor: pointer;
+    width: 50px; 
+}
+button:hover{
+    background-color: green;
+}
+/*footer*/
+
+footer{
+    text-align: right;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
