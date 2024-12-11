@@ -108,21 +108,34 @@ body {
     background-color: #c78c06;
 }
 
-section{
-    padding: 20px 15px;
-}
 
-.about-us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
+
+.about-us-container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+    background-color: #ffe6ac;
+    padding: 16px;
+    margin: auto;
+    
 }
-.about-us img{
+.image-container img{
     width: 100%;
     height: auto;
-    border-radius: 5px;
+}
+.text-container{
+    color: #000;
+}
+.text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+} 
+.text-container p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+
 }
 
 .services{
