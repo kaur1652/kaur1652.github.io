@@ -1,10 +1,10 @@
 body {
     font-family: sans-serif;
     line-height: 1.6;
+    margin: 0;
 }
 
 .header-content {
-
     background-color: #222;
     padding: 1rem;
     text-align: center;
@@ -17,16 +17,18 @@ body {
     top: 10px;
     left: 10px;
     height: 50px;
+    width: 50px;
 
 }
 
 .header-content nav ul {
-    margin-top: 70px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+    gap: 1rem;
     list-style: none;
+    padding: 0;
+    margin-top: 70px;
+    align-items: center;
 }
 
 .header-content nav ul li a {
@@ -50,8 +52,8 @@ body {
     padding: 0.5rem;
     width: 100%;
     border: none;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 
 }
 
@@ -59,7 +61,7 @@ body {
 .hero-section {
     position: relative;
     background-image: url(../images/main-banner.jpg);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     height: 90vh;
     display: flex;
@@ -72,10 +74,10 @@ body {
 .hero-section::before {
     content: "";
     position: absolute;
-    top: 60px;
-    bottom: 60px;
+    top: 0px;
+    bottom: 0px;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 
@@ -84,24 +86,24 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: left;
-    padding: 5px;
+    text-align: center;
+    padding: 1rem;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 1rem;
 }
 
 .hero-content .cta-button {
     display: inline-block;
-    padding: 20px 20px;
+    padding: 0.75rem 1.5rem;
     background-color: #ffc107;
     color: #222;
     cursor: pointer;
@@ -115,12 +117,14 @@ body {
 
 
 .about-us-container {
-    display: grid;
+    /* display: grid;
     grid-template-rows: auto 1fr;
     gap: 16px;
     background-color: #ffe6ac;
     padding: 16px;
-    margin: auto;
+    margin: auto; */
+    padding: 1rem;
+    background-color: #ffe6ac;
 
 }
 
@@ -131,28 +135,29 @@ body {
 
 .text-container {
     color: #000;
+    margin-top: 1rem;
 }
 
 .text-container h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .text-container p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 
 }
 
 .services-section{
-    margin: auto;
-    padding: 16px;
+    /* margin: auto; */
+    padding: 1rem;
 }
 
 .services-section h2{
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
     margin-top: 16px;
@@ -161,7 +166,7 @@ body {
 .services-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 1.5rem;
 }
 .service{
     display: grid;
@@ -206,7 +211,7 @@ height: auto;
     background-color: #333;
 }
 
-.vision-section {
+/* .vision-section {
     position:relative;
     background-image: url(../images/vision.jpg) ;
     padding: 50px;
@@ -220,7 +225,22 @@ height: auto;
     left: 10%;
     transform: translateY(-50%);
     max-width: 400px;
+} */
+.vision-section {
+    position: relative;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: #fff;
 }
+
+.vision-content {
+    max-width: 400px;
+}
+
+
+
 .vision-content h1 {
     
     font-size: 2rem;
