@@ -382,12 +382,7 @@ text-align: center;
     background: #ffe6ac;
 }
 
-.location-section-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100vh;
-    gap: 10px;
+.location-section {
     text-align: center;
 }
 
@@ -404,7 +399,7 @@ text-align: center;
     color: #c78c06;
 }
 .footer a {
-    color: #c78c06;
+    color: #ffcc00;
 }
 
 
