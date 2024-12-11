@@ -211,7 +211,7 @@ height: auto;
     background-color: #333;
 }
 
-/* .vision-section {
+.vision-section {
     position:relative;
     background-image: url(../images/vision.jpg) ;
     padding: 50px;
@@ -224,18 +224,6 @@ height: auto;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    max-width: 400px;
-} */
-.vision-section {
-    position: relative;
-    background-image: url(../images/vision.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-    color: #fff;
-}
-
-.vision-content {
     max-width: 400px;
 }
 
@@ -394,21 +382,29 @@ text-align: center;
     background: #ffe6ac;
 }
 
-.location-section {
+.location-section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    gap: 10px;
     text-align: center;
 }
 
 .location-section iframe {
-    width: 375px;
+    width: 100%;
     height: 500px;
-    border: 0;
+   
 }
 
 .footer {
-    text-align: center;
+    text-align: left;
     padding: 20px;
     background: #333;
-    color: #fff;
+    color: #c78c06;
+}
+.footer a {
+    color: #c78c06;
 }
 
 
