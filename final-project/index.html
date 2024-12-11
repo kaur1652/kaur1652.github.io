@@ -12,42 +12,46 @@
     <!-- Link to Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/36418d3ae5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="./images/logo.png" alt="Three Star Media Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <label for="search">search</label>
-            <input type="text" placeholder="Search" name="Search" required>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Three Star Media Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <label for="search" class="search-label">search</label>
+            </div>
+            <div class="search-input"><input type="text" placeholder="Search" name="Search" required>
 
-            <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"
+                        style="color: #c78c06"></i></button>
+            </div>
         </div>
     </header>
     <!-- Hero Section -->
     <main>
-        <section id="home" class="hero">
-            <img src="./images/main-banner.jpg" alt="main-banner">
-            <h1> Welcme to Three Star Media </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
-            <button>Connect with us <i class="fa-solid fa-play"></i></button>
+        <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1> Welcome to Three Star Media </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <a href="Connect with us" class="cta-button">Connect with us <i  class="fa-solid fa-play"></i> </a>
+        </div>
         </section>
         <!-- About Us Section -->
         <section id="about" class="about us">
@@ -77,7 +81,7 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliqui
                         ex ea commodo consequat. </p>
-                    <a href= "Digital Plans">Digitals Plans <i class="fa-solid fa-play"></i></a>
+                    <a href="Digital Plans">Digitals Plans <i class="fa-solid fa-play"></i></a>
                 </article>
                 <article>
                     <img src="./images/marketing.jpg" alt=" Marketing">
@@ -87,7 +91,7 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip
                         ex ea commodo consequat.</p>
-                    <a href=" Marketing Plans">Marketing Plans <i class="fa-solid fa-play"></i></a> 
+                    <a href=" Marketing Plans">Marketing Plans <i class="fa-solid fa-play"></i></a>
                 </article>
                 <article>
                     <img src="./images/video.jpg" alt=" video Production">
@@ -97,7 +101,7 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip
                         ex ea commodo consequat.</p>
-                    <button> video Plans<i class="fa-solid fa-play"></i> </button>
+                    <a href="video plans"> video Plans<i class="fa-solid fa-play"></i></a>
                 </article>
                 <article>
                     <img src="./images/web.jpg" alt=" Web Development">
@@ -107,7 +111,7 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip
                         ex ea commodo consequat.</p>
-                    <button> Web Plans<i class="fa-solid fa-play"></i> </button>
+                    <a href="Web Plans">Web Plans<i class="fa-solid fa-play"></i> </a>
                 </article>
                 <article>
                     <img src="./images/print.jpg" alt="Print">
@@ -117,7 +121,7 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip
                         ex ea commodo consequat.</p>
-                    <button> Print Plans <i class="fa-solid fa-play"></i></button>
+                    <a href="print plans">Print Plans <i class="fa-solid fa-play"></i></a>
                 </article>
             </div>
         </section>
@@ -127,7 +131,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
-            <button>Learn More <i class="fa-solid fa-play"></i></button>
+            <a href="Learn More"> Learn More<i class="fa-solid fa-play"></i></a>
         </section>
 
         <!-- Team Section -->

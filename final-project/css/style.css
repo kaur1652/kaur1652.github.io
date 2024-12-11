@@ -1,72 +1,111 @@
 body {
     font-family: sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background-color: #ffe6ac;
+    line-height: 1.6;  
+}
+.header-content{
+    
+    background-color: #222;
+    padding: 1rem ;
+    text-align: center;
+    position: relative;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
+.logo {
     background-color: #c78c06;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+   
 }
 
-header .logo img {
-    max-width: 120px;
-}
-
-header nav ul {
+.header-content nav ul {
+    margin-top: 70px;
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 1.5rem; 
+    align-items: center;
     list-style: none;
 }
 
-header nav ul li a {
+.header-content nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #ffe6ac;
+    font-size: 1.2rem;
+   
 }
 
-header .search input {
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 5px;
-
+.header-content nav  ul li a:hover {
+ color: #c78c06;
 }
 
-.hero {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
+
+.search-label{
+    position: absolute;
+    margin-top: -1000px;
 }
 
-.hero img {
+.search-input{
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.hero-section {
+    position: relative;
+    background-image: url(../images/main-banner.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    /* overflow: hidden; */
+}
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    
+}
+.hero-content{
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 5px;
 }
 
-.hero h1 {
-    color: #c78c06;
-    margin-top: 15px;
-
-}
-
-.hero p {
-    margin: 10px 0;
-    color: #222;
-}
-
-.hero button{
-    padding: 10px 20px;
-    background-color: #c78c06;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.hero-content h1 {
+    font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.hero-content .cta-button {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color:#ffc107;
+    color: #222;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hero-content .cta-button:hover {
+    background-color: #c78c06;
 }
 
 section{
