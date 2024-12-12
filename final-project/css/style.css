@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     
 }
-
+/* header */
 .header-content {
     background-color: #222;
     padding: 16px;
@@ -63,6 +63,7 @@ body {
     padding: 8px;
     cursor: pointer;
 }
+/* hero section */
 
 .hero-section {
     position: relative;
@@ -119,7 +120,7 @@ body {
     background-color: #c78c06;
 }
 
-
+/* About us section */
 
 .about-us-container {
     display: grid;
@@ -155,7 +156,7 @@ body {
     margin-bottom: 8px;
 
 }
-
+/* service section */
 .services-section{
     padding: 10px;
 }
@@ -218,7 +219,7 @@ height: auto;
 .service-content .service-link:hover{
     background-color: #333;
 }
-
+/* vision section */
 .vision-section {
     position:relative;
     background-image: url(../images/vision.jpg) ;
@@ -261,6 +262,7 @@ height: auto;
     background-color: #ffffff;
     color: rgba(0, 0, 50, 0.7);
 }
+/* team section */
 .team-section {
     padding: 10px;
 }
@@ -311,6 +313,7 @@ height: auto;
     font-size: 0.6rem;
 
 }
+/* contact section */
 
 .contact-section {
     padding: 10px;
@@ -394,7 +397,7 @@ height: auto;
     margin-top: 5px;
 }
 
-
+/* footer */
 footer {
     background: #222;
     color: #c78c06;
