@@ -23,6 +23,7 @@ body {
     height: auto;
 }
 
+
 .header-content nav ul {
     display: flex;
     flex-direction: column;
@@ -410,3 +411,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
