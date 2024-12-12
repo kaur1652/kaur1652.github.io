@@ -1,24 +1,26 @@
 body {
     font-family: sans-serif;
     line-height: 1.6;
-    margin: 0;
+    
 }
 
 .header-content {
     background-color: #222;
-    padding: 1rem;
+    padding: 16px;
     text-align: center;
     position: relative;
 }
 
-.logo {
+.logo{
     background-color: #c78c06;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 50px;
-    width: 50px;
+    padding-bottom: 80px;
+}
 
+.logo img {
+    display: flex;
+    align-items: flex-start;
+    width: 100px;
+    height: auto;
 }
 
 .header-content nav ul {
@@ -27,7 +29,6 @@ body {
     gap: 1rem;
     list-style: none;
     padding: 0;
-    margin-top: 70px;
     align-items: center;
 }
 
@@ -35,7 +36,6 @@ body {
     text-decoration: none;
     color: #ffe6ac;
     font-size: 1.2rem;
-
 }
 
 .header-content nav ul li a:hover {
@@ -45,18 +45,23 @@ body {
 
 .search-label {
     position: absolute;
-    margin-top: -1000px;
+    margin-top: -10000px;
 }
 
 .search-input {
     padding: 0.5rem;
-    width: 100%;
+    width: 200px;
     border: none;
-    /* display: flex;
-    justify-content: center; */
-
+    display: flex;
+    justify-content: center;
 }
 
+.search-button{
+    background-color:#222 ;
+    border: 1px solid #c78c06;
+    padding: 8px;
+    cursor: pointer;
+}
 
 .hero-section {
     position: relative;
@@ -68,40 +73,39 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
-    /* overflow: hidden; */
+    
 }
 
 .hero-section::before {
     content: "";
     position: absolute;
-    top: 0px;
-    bottom: 0px;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-
+    
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
 }
 
 .hero-content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.6rem;
 }
 
 .hero-content .cta-button {
+    font-size: 1rem;
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #ffc107;
@@ -117,12 +121,12 @@ body {
 
 
 .about-us-container {
-    /* display: grid;
+    display: grid;
     grid-template-rows: auto 1fr;
     gap: 16px;
     background-color: #ffe6ac;
     padding: 16px;
-    margin: auto; */
+    margin: auto;
     padding: 1rem;
     background-color: #ffe6ac;
 
@@ -135,33 +139,32 @@ body {
 
 .text-container {
     color: #000;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 
 .text-container h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
 }
 
 .text-container p {
-    font-size: 1rem;
+    font-size: 0.6rem;
     line-height: 1.5;
-    /* margin-bottom: 8px; */
+    margin-bottom: 8px;
 
 }
 
 .services-section{
-    /* margin: auto; */
-    padding: 1rem;
+    padding: 10px;
 }
 
 .services-section h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: left;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .services-grid{
     display: grid;
@@ -187,22 +190,26 @@ height: auto;
     gap: 16px;
 }
 .service-content h3{
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+}
+.service-content p{
+    font-size: 0.6rem;
 }
 .service-content .service-link{
     background-color: #000;
     color: #fff;
     padding: 15px 16px;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     display: inline-block;
-    width: 40%;
+    width: 20%;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     transition: background-color 0.3s ease;
 }
+
 .icon{
     margin-left: 8px;
 }
@@ -214,9 +221,9 @@ height: auto;
 .vision-section {
     position:relative;
     background-image: url(../images/vision.jpg) ;
-    padding: 50px;
+    padding: 20px;
     text-align: left;
-    height: 400px;
+    height: 300px;
 }
 .vision-content{
     color: #fff;
@@ -224,21 +231,17 @@ height: auto;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    max-width: 400px;
+    
 }
 
-
-
-.vision-content h1 {
-    
+.vision-content h2 {
     font-size: 2rem;
-    margin: 0 0 15px;
+    font-weight: bold;
+
 }
 
 .vision-content p {
-    
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.6rem;
     margin-bottom: 20px;
 }
 
@@ -250,7 +253,6 @@ height: auto;
     color: white;
     text-decoration: none;
     font-size: 1rem;
-  
     transition: all 0.3s ease;
 }
 
@@ -259,28 +261,27 @@ height: auto;
     color: rgba(0, 0, 50, 0.7);
 }
 .team-section {
-    padding: 50px 10%;
-   
+    padding: 10px;
 }
 
-.team-section h1 {
-    text-align: center;
-    margin-bottom: 40px;
+.team-section h2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr; 
     gap: 20px;
 }
 
 .team-member {
     background:#ffe6ac;
-   
     border-radius: 5px;
     
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .team-member img {
@@ -288,51 +289,52 @@ height: auto;
     height: auto;
 }
 .team-member .member-info {
-    padding: 20px;
-}
-
-.team-member .member-info h2 {
-    margin: 0;
-    font-size: 1.5rem;
+    padding: 10px;
 }
 
 .team-member .member-info h3 {
-    margin: 5px 0 10px;
-    font-size: 1rem;
-    color: #222;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
-.team-member .member-info hr {
-    border: none;
-    border-top: 2px solid #c78c06;
+
+.team-member  .name {
+    font-size: 0.5rem;
+    font-weight: bold;
+
+}
+.team-member  .line {
+   border: 1px solid #c78c06;
 }
 
 .team-member .member-info p {
-    font-size: 0.9rem;
-    color: #222;
+    font-size: 0.6rem;
+
 }
 
 .contact-section {
-    padding: 50px 10%;
+    padding: 10px;
 }
 
-.contact-section h1 {
-    text-align: center;
-    margin-bottom: 30px;
+.contact-section h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.contact-section h3{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-.contact-form {
-    margin: 0 auto 50px;
-    padding: 20px;
+.contact-form form {
+    padding: 10px;
     background: #fff;
-    
-    border-radius: 5px;
-    
 }
 
 .contact-form label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 10px;
+
 }
 
 .contact-form input,
@@ -340,66 +342,71 @@ height: auto;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #222;
+    border-radius: 4px;
 }
 
 .contact-form button {
-    padding: 10px 20px;
-    background: #ffcc00;
+    padding: 10px;
+    background: #222;
     border: none;
-    border-radius: 5px;
-    color: #333;
+  color: #c78c06;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
+  
 }
 
 .contact-form button:hover {
-    background: #e6b800;
-}
-.hours-section {
-    max-width: 600px;
-    margin: 0 auto 50px;
+    background: #fff;
 }
 
 .hours-section table {
     width: 100%;
-    border-collapse: collapse;
-}
-
-.hours-section th {
     border: 1px solid #222;
-    padding: 10px;
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
+
+.hours-section th{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid#222;
+
+} 
 .hours-section td {
-border: 1px solid #222;
-padding: 10px;
-text-align: center;
-}
-
-.hours-section th {
-    background: #ffe6ac;
-}
-
-.location-section {
-    text-align: center;
-}
-
-.location-section iframe {
-    width: 100%;
-    height: 500px;
-   
-}
-
-.footer {
+    padding: 12px;
     text-align: left;
-    padding: 20px;
-    background: #333;
+    border: 1px solid#222;
+}
+
+.hours-section thead {
+    background-color: #ffe6ac;
+}
+
+
+.Location-section iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+}
+
+
+footer {
+    background: #222;
     color: #c78c06;
-}
-.footer a {
-    color: #ffcc00;
+    text-align: left;
+    padding: 15px 10px;
+    margin-top: 20px;
 }
 
+footer a {
+    color: #c78c06;
+    text-decoration: none;
+}
 
+footer a:hover {
+    text-decoration: underline;
+}
